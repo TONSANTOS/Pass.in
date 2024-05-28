@@ -2,7 +2,25 @@ POST http://localhost:3334/events
 Content-Type: application/json
 
 {
-    "title": "Nlw Unite",
-    "details": "Um evento para quem é apaixonado por programação",
-    "maximunAttendees": 100
+    "title": "Novo evento 2",
+    "details": null,
+    "maximunAttendees": 1
 }
+
+###
+
+POST http://localhost:3334/events/a10cc42a-7dab-41fe-a779-90d050cbc17b/attendees
+Content-Type: application/json
+
+{
+    "name": "Ton Santos",
+    "email": "tonsantos@gmail.com"
+}
+
+###
+
+GET http://localhost:3334/events/a10cc42a-7dab-41fe-a779-90d050cbc17b
+
+###
+
+GET http://localhost:3334/attendees/4/badge
